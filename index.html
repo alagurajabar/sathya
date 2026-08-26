@@ -16,15 +16,20 @@
   <!-- SITE PRELOADER SPLASH SCREEN -->
   <div class="preloader-overlay" id="appPreloader">
     <div class="preloader-content">
-      <div class="preloader-logo-icon">
-        <i class="fa-solid fa-leaf"></i>
+      <div class="preloader-logo-wrap">
+        <div class="preloader-logo-ring"></div>
+        <div class="preloader-logo-ring"></div>
+        <div class="preloader-logo-ring"></div>
+        <div class="preloader-logo-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
       </div>
       <h1 class="preloader-title">SATHYA <span>BIO</span></h1>
-      <p class="preloader-sub">Agro Pesticides & Crop Protection Store</p>
+      <p class="preloader-sub">Agro Pesticides &amp; Crop Advisory</p>
       <div class="preloader-bar">
         <div class="preloader-progress"></div>
       </div>
-      <span class="preloader-note"><i class="fa-solid fa-heart" style="color:#ef4444;"></i> We Care For You & Your Crops</span>
+      <span class="preloader-note"><i class="fa-solid fa-heart" style="color:#ef4444;"></i>&nbsp; We Care For You &amp; Your Crops</span>
     </div>
   </div>
   <div class="ticker-wrap">
@@ -986,29 +991,44 @@
   <div class="modal-overlay" id="welcomePosterModal">
     <div class="modal-card welcome-poster-card">
       <button class="modal-close" onclick="closeModal('welcomePosterModal')" title="Close & see website" aria-label="Close poster">&times;</button>
-      <div class="welcome-poster-header" style="background: linear-gradient(135deg, #047857 0%, #065f46 50%, #064e3b 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-        <div style="font-size: 3.5rem; line-height: 1; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));">🌱</div>
-        <div style="font-size: 1.4rem; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">SATHYA <span style="color: #fbbf24;">BIO</span></div>
-        <div style="font-size: 0.8rem; color: #a7f3d0; letter-spacing: 1px; text-transform: uppercase;">Agro Pesticides & Crop Advisory</div>
-        <div class="welcome-poster-badge"><i class="fa-solid fa-hand-holding-heart"></i> We Care For You</div>
+
+      <!-- Header: brand banner -->
+      <div class="welcome-poster-header">
+        <div class="welcome-poster-leaf">🌱</div>
+        <div class="welcome-poster-brand">SATHYA <span>BIO</span></div>
+        <div class="welcome-poster-tagline">Agro Pesticides &amp; Crop Advisory</div>
+        <div class="welcome-poster-badge">
+          <i class="fa-solid fa-heart" style="color:#f87171;"></i> We Care For You
+        </div>
       </div>
+
+      <!-- Body -->
       <div class="welcome-poster-body">
-        <span class="welcome-poster-tag">🌟 Sathya Bio Farmer Advisory</span>
+        <span class="welcome-poster-tag">🌟 Farmer Advisory Platform</span>
         <h2 class="welcome-poster-title">Welcome to the Personalized Farming Experience!</h2>
         <p class="welcome-poster-text">
-          Welcome to the personalized farming experience that you can do farming with our expert with daily updates. We care for you!
+          &ldquo;Welcome to the personalized farming experience that you can do farming with our expert with daily updates. We care for you!&rdquo;
         </p>
         <div class="welcome-poster-features">
-          <div class="wp-feat"><i class="fa-solid fa-user-doctor" style="color: var(--primary);"></i> Direct 1-on-1 Agronomist Consultations</div>
-          <div class="wp-feat"><i class="fa-solid fa-bell" style="color: var(--accent-amber);"></i> Daily Crop Protection & Disease Updates</div>
-          <div class="wp-feat"><i class="fa-solid fa-shield-halved" style="color: var(--primary-light);"></i> 100% Bio-Certified Formulations</div>
+          <div class="wp-feat">
+            <div class="wp-feat-icon" style="background:rgba(52,211,153,0.15);color:#34d399;"><i class="fa-solid fa-user-doctor"></i></div>
+            Direct 1-on-1 Agronomist Consultations
+          </div>
+          <div class="wp-feat">
+            <div class="wp-feat-icon" style="background:rgba(251,191,36,0.15);color:#fbbf24;"><i class="fa-solid fa-bell"></i></div>
+            Daily Crop Protection &amp; Disease Updates
+          </div>
+          <div class="wp-feat">
+            <div class="wp-feat-icon" style="background:rgba(96,165,250,0.15);color:#60a5fa;"><i class="fa-solid fa-shield-halved"></i></div>
+            100% Bio-Certified Formulations
+          </div>
         </div>
         <div class="welcome-poster-btn-row">
-          <button class="btn btn-primary" onclick="closeModal('welcomePosterModal'); openModal('expertModal');" style="flex: 1; justify-content: center; padding: 12px; font-size: 0.92rem;">
+          <button class="wp-btn-primary" onclick="closeModal('welcomePosterModal'); openModal('expertModal');">
             <i class="fa-solid fa-user-doctor"></i> Connect With Expert
           </button>
-          <button class="btn btn-gold" onclick="closeModal('welcomePosterModal')" style="justify-content: center; padding: 12px; font-size: 0.92rem;">
-            <i class="fa-solid fa-store"></i> Explore Store
+          <button class="wp-btn-secondary" onclick="closeModal('welcomePosterModal')">
+            <i class="fa-solid fa-store"></i> Explore
           </button>
         </div>
       </div>
